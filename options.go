@@ -177,7 +177,7 @@ func (o *ClientOptions) SetStore(s Store) *ClientOptions {
 	return o
 }
 
-// SetKeepAlive will set the amount of time (in seconds) that the client
+// SetKeepAlive will set the amount of time that the client
 // should wait before sending a PING request to the broker. This will
 // allow the client to know that a connection has not been lost with the
 // server.
@@ -186,7 +186,7 @@ func (o *ClientOptions) SetKeepAlive(k time.Duration) *ClientOptions {
 	return o
 }
 
-// SetPingTimeout will set the amount of time (in seconds) that the client
+// SetPingTimeout will set the amount of time that the client
 // will wait after sending a PING request to the broker, before deciding
 // that the connection has been lost. Default is 10 seconds.
 func (o *ClientOptions) SetPingTimeout(k time.Duration) *ClientOptions {
